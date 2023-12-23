@@ -796,6 +796,22 @@ num=125
 result=sum_of_digit(num)
 print(result)
 
+#43 reverse string
+my_string = c("ACBCAD")
+convert_string_to_vector = strsplit(my_string, NULL)[[1]]
+my_array = c(convert_string_to_vector)
+print(my_array)
+reverse_string = function(x){
+  n = length(x)
+  reversed = character(n)  
+  for(i in 1:n){
+    reversed[i] = x[n-i+1]
+  }
+  return(c(reversed))
+}
+
+result = reverse_string(my_array)
+print(result)
 
 
 
