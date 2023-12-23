@@ -814,27 +814,45 @@ result = reverse_string(my_array)
 print(result)
 
 #44 Armstrong number
-isArmstrong <- function(num) {
-  digits <- as.numeric(strsplit(as.character(num), '')[[1]])
+isArmstrong = function(num) {
+  digits = as.numeric(strsplit(as.character(num), '')[[1]])
   
-  n <- length(digits)
+  n = length(digits)
  
-  armstrong_sum <- sum(digits ^ n)
+  armstrong_sum = sum(digits ^ n)
  
   return(armstrong_sum == num)
 }
 
-num1 <- 153
-num2 <- 1634
-num3 <- 89
+num1 = 153
+num2 = 1634
+num3 = 89
 
-result1 <- isArmstrong(num1)
-result2 <- isArmstrong(num2)
-result3 <- isArmstrong(num3)
+result1 = isArmstrong(num1)
+result2 = isArmstrong(num2)
+result3 = isArmstrong(num3)
 
 cat(paste(num1, "is Armstrong?", result1, "\n"))
 cat(paste(num2, "is Armstrong?", result2, "\n"))
 cat(paste(num3, "is Armstrong?", result3, "\n"))
+
+#45 FizzBuzz
+fizzbuzz= function(num){
+  if(num%%3==0 && num %%5==0){
+    return("FizzBuzz")
+  }else if (num%%3==0){
+    return("Fizz")
+  }else if (num%%5==0){
+    return("Buzz")
+  }else{
+    return(FALSE)
+  }
+  
+}
+number=15
+result=fizzbuzz(number)
+print(result)
+
 
 
 
