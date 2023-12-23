@@ -781,6 +781,20 @@ palindrome = function(arr) {
 result= palindrome(my_array)
 print(result)
 
+##42: Sum of digit
+sum_of_digit=function(x){
+  sum=0
+  while(x> 0){
+    digit= x %% 10
+    sum= sum+ digit
+    x= x %/% 10
+  }
+  return(sum)
+  
+}
+num=125
+result=sum_of_digit(num)
+print(result)
 
 
 
