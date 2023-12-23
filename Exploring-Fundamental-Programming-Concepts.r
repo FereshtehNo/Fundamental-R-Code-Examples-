@@ -763,6 +763,25 @@ k = 3
 final_result = array_rotation(my_array, k)
 print(final_result)
 
+#41: palindrome check
+my_string = c("ACBCA")
+convert_string_to_vector = strsplit(my_string, NULL)[[1]]#by search
+my_array = c(convert_string_to_vector)
+print(my_array)
+palindrome = function(arr) {
+  n = length(arr)
+  for (i in 1:(n/2)) {  # n/2 is by search
+    if (arr[i] != arr[n - i + 1]) {
+      return(FALSE)
+    }
+  }
+  return(TRUE)
+}
+
+result= palindrome(my_array)
+print(result)
+
+
 
 
 
