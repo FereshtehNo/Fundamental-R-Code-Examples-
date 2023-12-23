@@ -43,6 +43,12 @@
 37. [Problem 2: Top K Values from n Number.](#37-problem-2-top-k-values-from-n-number)
 38. [Problem 3: K-mer Matching.](#38-problem-3-k-mer-matching)
 39. [Identify high variance columns.](#39-identify-high-variance-columns)
+40. [Array Rotation.](#40-Array Rotation)
+41. [palindrome check.](#41-palindrome check)
+42. [Sum of digit.](#42-Sum of digit)
+43. [reverse string.](#43-reverse string)
+44. [Armstrong number.](#44-Armstrong number)
+45. [FizzBuzz.](#45-FizzBuzz)
 
 ## How to Use
 
