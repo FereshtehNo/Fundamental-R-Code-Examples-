@@ -748,6 +748,21 @@ print(col_variances)
 top_k_variances = order(col_variances, decreasing = TRUE)[1:2]
 print(top_k_variances)
 
+#40:Array Rotation
+array_rotation = function(arry, k) {
+  n = length(arry)
+  result = numeric(n)
+  for (i in 1:n) {
+    result[(i + k - 1) %% n + 1] = arry[i]  # by search
+  }
+  return(result)
+}
+
+my_array = c(1, 3, 2, 4, 5)
+k = 3
+final_result = array_rotation(my_array, k)
+print(final_result)
+
 
 
 
