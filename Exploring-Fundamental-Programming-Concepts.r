@@ -813,6 +813,30 @@ reverse_string = function(x){
 result = reverse_string(my_array)
 print(result)
 
+#44 Armstrong number
+isArmstrong <- function(num) {
+  digits <- as.numeric(strsplit(as.character(num), '')[[1]])
+  
+  n <- length(digits)
+ 
+  armstrong_sum <- sum(digits ^ n)
+ 
+  return(armstrong_sum == num)
+}
+
+num1 <- 153
+num2 <- 1634
+num3 <- 89
+
+result1 <- isArmstrong(num1)
+result2 <- isArmstrong(num2)
+result3 <- isArmstrong(num3)
+
+cat(paste(num1, "is Armstrong?", result1, "\n"))
+cat(paste(num2, "is Armstrong?", result2, "\n"))
+cat(paste(num3, "is Armstrong?", result3, "\n"))
+
+
 
 
 
