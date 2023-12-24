@@ -853,6 +853,29 @@ number=15
 result=fizzbuzz(number)
 print(result)
 
+#46 Anagram
+find_anagram = function(str, rts) {
+  str1 = as.character(str)
+  str2 = as.character(rts)
+  
+  if (nchar(str1) != nchar(str2)) {
+    return("Not an anagram (different lengths)")
+  }
+  
+  for (i in str1) {
+    if (!(i %in% str2)) {
+      return("Not an anagram")
+    }
+  }
+  
+  return("It's an anagram")
+}
+
+string1 = "listen"
+string2 = "silent"
+result = find_anagram(string1, string2)
+print(result)
+
 
 
 
