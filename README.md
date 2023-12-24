@@ -49,6 +49,7 @@
 43. [reverse string.](#43-reverse-string).
 44. [Armstrong number.](#44-Armstrong-number).
 45. [FizzBuzz.](#45-FizzBuzz)
+46. [Anagram.](#46-Anagram)
 
 ## How to Use
 
