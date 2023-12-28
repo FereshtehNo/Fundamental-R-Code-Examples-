@@ -84,7 +84,6 @@ reversed_result <- reverse_array(My_array)
 print(reversed_result)
 
 #6Sort array
-My_array = c(1, 5, 3, 8, 9)
 bubble_sort =function(arr) {
   n = length(arr)
   for (i in 1:(n - 1)) {
@@ -99,8 +98,17 @@ bubble_sort =function(arr) {
   return(arr)
 }
 
-sorting <- bubble_sort(My_array)
-print(sorting)
+merge_sort=function(arr1,arr2){
+  combinn=c(a,b)
+  result=bubble_sort(combinn)
+}
+a=c(1,5,7)
+b=c(4,6,2)
+final_result=merge_sort(a,b)
+print(final_result)
+
+
+
 #recursive approach
 merge_and_sort = function(arr1, arr2) {
   combined = c(arr1, arr2)
