@@ -885,6 +885,18 @@ result = find_anagram(string1, string2)
 print(result)
 
 #47 Sum of Prime Numbers
+sum_of_function= function(arr){
+  sumation=-1
+  for(i in arr){
+    if (i %%2 !=0){
+     sumation=sumation +i 
+    }
+  }
+  return(sumation)
+}
+my_array=c(1,2,3,5,12,13)
+result=sum_of_function(my_array)
+print(result)
 
 
 
