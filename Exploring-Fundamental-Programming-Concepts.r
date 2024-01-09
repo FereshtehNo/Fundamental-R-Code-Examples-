@@ -898,6 +898,39 @@ my_array=c(1,2,3,5,12,13)
 result=sum_of_function(my_array)
 print(result)
 
+#48  Longest Increasing Subsequence
+Longest_Increasing_Subsequence = function(arr) {
+  n = length(arr)
+  lis_length = rep(1, n)
+  
+  for (i in 2:n) {
+    for (j in 1:(i - 1)) {
+      if (arr[i] > arr[j] && lis_length[i] < lis_length[j] + 1) {
+        lis_length[i] = lis_length[j] + 1
+      }
+    }
+  }
+  
+  # The maximum value in lis_length is the length of the LIS
+  max_length = max(lis_length)
+  
+  # Reconstruct the LIS
+  lis = numeric(max_length)
+  pos = max_length
+  for (i in n:1) {
+    if (lis_length[i] == pos) {
+      lis[pos] = arr[i]
+      pos = pos - 1
+    }
+  }
+  
+  return(list(length = max_length, lis = lis))
+}
+
+my_arr = c(10, 22, 9, 33, 21, 50, 41, 60, 80)
+result = Longest_Increasing_Subsequence(my_arr)
+print(result)
+
 
 
 
