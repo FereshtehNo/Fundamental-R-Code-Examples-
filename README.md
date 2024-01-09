@@ -51,7 +51,7 @@
 45. [FizzBuzz.](#45-FizzBuzz)
 46. [Anagram.](#46-Anagram)
 47. [Sum of Prime Numbers.](#47-Sum-of-Prime-Numbers).
-48. [Longest Increasing Subsequence.](#48-Sum-of-Prime-Numbers).
+48. [Longest Increasing Subsequence.](#48-Longest-Increasing-Subsequence).
 
 ## How to Use
 
